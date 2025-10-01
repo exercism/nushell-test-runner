@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "error",
-  "message": "TODO: replace with correct output"
+  "message": "Error: nu::parser::unexpected_eof\n\n  x Unexpected end of code.\n   ,-[/home/foxduck/Documents/GitHub/nushell-test-runner/hello-world/hello-world.nu:3:1]\n 2 |     \"Hello, World!\n 3 | }\n   : |\n   : `-- expected closing \"\n   `----"
 }

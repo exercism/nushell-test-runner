@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "TODO: replace with correct output"
+  "message": "Error: nu::shell::error\n\n  x Assertion failed.\n   ,-[/home/foxduck/Documents/GitHub/nushell-test-runner/tests/partial-fail/tests.nu:3:14]\n 2 | use std/assert\n 3 | assert equal (two_fer \"Alice\") \"One for Alice, one for me.\"\n   :              ^^^^^^^^^^^^^^^^^^^^^^^|^^^^^^^^^^^^^^^^^^^^^^\n   :                                     `-| These are not equal.\n   :                                       |         Left  : '\"One for $name, one for me.\"'\n   :                                       |         Right : '\"One for Alice, one for me.\"'\n 4 | assert equal (two_fer) \"One for you, one for me.\"\n   `----"
 }
