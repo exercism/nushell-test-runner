@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 ls /usr/local/bin # DEBUG
+echo $PATH # DEBUG
 # Synopsis:
 # Run the test runner on a solution.
 
