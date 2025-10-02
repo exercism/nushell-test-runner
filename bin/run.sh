@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
-# Ensure nu is in the PATH
-export PATH="/opt/test-runner:$PATH"
 
 # Synopsis:
 # Run the test runner on a solution.
@@ -35,7 +33,7 @@ echo "${slug}: testing..."
 
 # Run the tests for the provided implementation file and redirect stdout and
 # stderr to capture it
-test_output="$(nu "$solution_dir/tests.nu" 2>&1)"
+test_output="$(/usr/local/bin/nu "$solution_dir/tests.nu" 2>&1)"
 
 # Write the results.json file based on the exit code of the command that was 
 # just executed that tested the implementation file
