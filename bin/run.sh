@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+ls /usr/local/bin # DEBUG
 # Synopsis:
 # Run the test runner on a solution.
 
