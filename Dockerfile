@@ -4,7 +4,9 @@ FROM alpine:3.18
 RUN apk add --no-cache jq coreutils curl
 
 RUN curl -L -o nushell.tar.gz "https://github.com/nushell/nushell/releases/download/0.107.0/nu-0.107.0-x86_64-unknown-linux-gnu.tar.gz" && \
-    tar xz -C /usr/local/bin --strip-components=1 nu-0.107.0-x86_64-unknown-linux-gnu/nu
+    tar xvf nushell.tar.gz && \
+    mv nu-0.107.0-x86_64-unknown-linux-gnu/nu /usr/local/bin/nu && \
+    chmod +x /usr/local/bin/nu
 
 WORKDIR /opt/test-runner
 COPY . .
