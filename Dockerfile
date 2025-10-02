@@ -10,6 +10,7 @@ RUN curl -L -o nushell.tar.gz "https://github.com/nushell/nushell/releases/downl
     chmod +x /usr/local/bin/nu && \
     export PATH=/usr/local/bin:$PATH
 # Debug
+RUN ls /usr/local/bin
 WORKDIR /opt/test-runner
 COPY . .
 ENTRYPOINT ["/opt/test-runner/bin/run.sh"]

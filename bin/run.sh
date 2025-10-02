@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 # Synopsis:
 # Run the test runner on a solution.
-ls /opt/test-runner
 # Arguments:
 # $1: exercise slug
 # $2: path to solution folder
