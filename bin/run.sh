@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-find / -name nu -print  # DEBUG
 # Synopsis:
 # Run the test runner on a solution.
 

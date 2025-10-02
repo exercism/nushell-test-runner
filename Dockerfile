@@ -7,7 +7,8 @@ RUN curl -L -o nushell.tar.gz "https://github.com/nushell/nushell/releases/downl
     tar xvf nushell.tar.gz && \
     mv nu-0.107.0-x86_64-unknown-linux-gnu/nu /usr/local/bin/nu && \
     chmod +x /usr/local/bin/nu
-
+# Debug
+RUN /usr/local/bin/nu --version 
 WORKDIR /opt/test-runner
 COPY . .
 ENTRYPOINT ["/opt/test-runner/bin/run.sh"]
