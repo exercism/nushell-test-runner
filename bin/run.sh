@@ -2,7 +2,7 @@
 # Ensure /usr/local/bin is in the PATH
 export PATH="/usr/local/bin:$PATH"
 
-ls /usr/local/bin # DEBUG
+ls /usr/local/bin | realpath # DEBUG
 echo $PATH # DEBUG
 # Synopsis:
 # Run the test runner on a solution.
