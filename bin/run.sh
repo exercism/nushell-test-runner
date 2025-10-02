@@ -1,9 +1,7 @@
 #!/usr/bin/env sh
-# Ensure /usr/local/bin is in the PATH
-export PATH="/usr/local/bin:$PATH"
+# Ensure nu is in the PATH
+export PATH="/opt/test-runner:$PATH"
 
-realpath $(ls /usr/local/bin) # DEBUG
-echo $PATH # DEBUG
 # Synopsis:
 # Run the test runner on a solution.
 
