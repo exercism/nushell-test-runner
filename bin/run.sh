@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+# Ensure /usr/local/bin is in the PATH
+export PATH="/usr/local/bin:$PATH"
+
 ls /usr/local/bin # DEBUG
 echo $PATH # DEBUG
 # Synopsis:
