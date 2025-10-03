@@ -39,7 +39,7 @@ if [ $? -eq 0 ]; then
     jq -n '{version: 1, status: "pass"}' > ${results_file}
 else
     status="error"
-    if [["$test_output" =~ "Assertion failed"]]; then
+    if [["$test_output" = * "Assertion failed"]]; then
         status="fail"
     fi
 
