@@ -46,7 +46,7 @@ else
     esac
     
     # Remove file paths specific to the local machine from the output
-    test_output=$(echo $test_output | sed 's/,-\[.+?\]\n/\n/g')
+    test_output=$(echo "$test_output" | sed 's|[^ ]*/\([^ ]*\)|\1|g')
 
     jq -n --arg output "$test_output" --arg status "$status" '{version: 1, status: $status, message: $output}' > "${results_file}"
 fi
