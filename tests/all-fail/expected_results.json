@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "Error: nu::shell::error\n\n  x Assertion failed.\n   ,-[/home/foxduck/Documents/GitHub/nushell-test-runner/hello-world/tests.nu:3:14]\n 2 | use std/assert\n 3 | assert equal (hello) \"Hello, World!\"\n   :              ^^^^^^^^^^^|^^^^^^^^^^^\n   :                         `-| These are not equal.\n   :                           |         Left  : '\"Goodbye, Mars!\"'\n   :                           |         Right : '\"Hello, World!\"'\n   `----"
+  "message": "Error:   x Assertion failed.\n   ,-[/opt/test-runner/tests/all-fail/tests.nu:3:14]\n 2 | use std/assert\n 3 | assert equal (hello) \"Hello, World!\"\n   :              ^^^^^^^^^^^|^^^^^^^^^^^\n   :                         `-| These are not equal.\n   :                           |         Left  : '\"Goodbye, Mars!\"'\n   :                           |         Right : '\"Hello, World!\"'\n   `----"
 }
