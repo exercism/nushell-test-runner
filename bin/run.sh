@@ -36,7 +36,7 @@ test_output="$(nu "$solution_dir/tests.nu" 2>&1)"
 # Write the results.json file based on the exit code of the command that was 
 # just executed that tested the implementation file
 if [ $? -eq 0 ]; then
-    jq -n '{version: 1, status: "pass"}' > ${results_file}
+    jq -n '{version: 1, status: "pass"}' > "${results_file}"
 else
     status="error"
     case "$test_output" in 
@@ -45,13 +45,8 @@ else
             ;;
     esac
     
-
-    # OPTIONAL: Manually add colors to the output to help scanning the output for errors
-    # If the test output does not contain colors to help identify failing (or passing)
-    # tests, it can be helpful to manually add colors to the output
-    # colorized_test_output=$(echo "${test_output}" \
-    #      | GREP_COLOR='01;31' grep --color=always -E -e '^(ERROR:.*|.*failed)$|$' \
-    #      | GREP_COLOR='01;32' grep --color=always -E -e '^.*passed$|$')
+    # Remove file paths specific to the local machine from the output
+    test_output=$(echo $test_output | sed 's/,-\[.+?\]\n/\n/g')
 
     jq -n --arg output "$test_output" --arg status "$status" '{version: 1, status: $status, message: $output}' > "${results_file}"
 fi
