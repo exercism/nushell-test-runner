@@ -39,9 +39,12 @@ if [ $? -eq 0 ]; then
     jq -n '{version: 1, status: "pass"}' > ${results_file}
 else
     status="error"
-    if [ "$test_output" = *"Assertion failed" ]; then
-        status="fail"
-    fi
+    case "$test_output" in 
+        *"Assertion failed"*)
+            status="fail"
+            ;;
+    esac
+    
 
     # OPTIONAL: Manually add colors to the output to help scanning the output for errors
     # If the test output does not contain colors to help identify failing (or passing)
