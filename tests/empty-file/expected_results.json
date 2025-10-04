@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "error",
-  "message": "Error: nu::parser::export_not_found\n\n  x Export not found.\n   ,-[/home/foxduck/Documents/GitHub/nushell-test-runner/tests/empty-file/tests.nu:1:19]\n 1 | use empty-file.nu hello\n   :                   ^^|^^\n   :                     `-- could not find imports\n 2 | use std/assert\n   `----"
+  "message": "Error: nu::parser::export_not_found\n\n  x Export not found.\n   tests.nu:1:19]\n 1 | use empty-file.nu hello\n   :                   ^^|^^\n   :                     `-- could not find imports\n 2 | use assert\n   `----"
 }

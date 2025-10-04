@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "error",
-  "message": "Error: nu::parser::unexpected_eof\n\n  x Unexpected end of code.\n   ,-[/home/foxduck/Documents/GitHub/nushell-test-runner/tests/syntax-error/syntax-error.nu:4:1]\n 3 | }\n 4 | \n   : |\n   : `-- expected closing \"\n   `----"
+  "message": "Error: nu::parser::unexpected_eof\n\n  x Unexpected end of code.\n   syntax-error.nu:4:1]\n 3 | }\n 4 | \n   : |\n   : `-- expected closing \"\n   `----"
 }
