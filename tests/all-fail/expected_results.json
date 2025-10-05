@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "TODO: replace with correct output"
+  "message": "Error:   x Assertion failed.\n   tests.nu:3:14]\n 2 | use assert\n 3 | assert equal (hello) \"Hello, World!\"\n   :              ^^^^^^^^^^^|^^^^^^^^^^^\n   :                         `-| These are not equal.\n   :                           |         Left  : '\"Goodbye, Mars!\"'\n   :                           |         Right : '\"Hello, World!\"'\n   `----"
 }
