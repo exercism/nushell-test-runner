@@ -40,7 +40,7 @@ if [ $? -eq 0 ]; then
 else
     status="error"
     case "$test_output" in 
-        *"Assertion failed"*)
+        *"These are not equal"*)
             status="fail"
             ;;
     esac
