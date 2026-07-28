@@ -1,5 +1,5 @@
 FROM alpine:3.23.5@sha256:fd791d74b68913cbb027c6546007b3f0d3bc45125f797758156952bc2d6daf40
-ARG VERSION=0.112.2
+ARG VERSION=0.114.1
 
 RUN apk add --no-cache jq curl && \
     curl -L https://github.com/nushell/nushell/releases/download/${VERSION}/nu-${VERSION}-x86_64-unknown-linux-musl.tar.gz \
